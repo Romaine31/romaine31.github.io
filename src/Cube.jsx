@@ -1,13 +1,12 @@
 import React, { useRef } from 'react'
 import { Environment, MeshTransmissionMaterial, useGLTF } from '@react-three/drei'
 import { useThree, useFrame } from '@react-three/fiber'
-import modelSrc from "Portfolio/src/assets/cube.glb?url"
 // import { useControls } from 'leva'
 
 export default function Cube() {
 
     const cube = useRef();
-    const { nodes } = useGLTF(modelSrc)
+    const { nodes } = useGLTF(import.meta.env.BASE_URL + '/src/assets/cube.glb')
     const { viewport } = useThree();
 
   useFrame( () => {

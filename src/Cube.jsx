@@ -6,7 +6,7 @@ import { useThree, useFrame } from '@react-three/fiber'
 export default function Cube() {
 
     const cube = useRef();
-    const { nodes } = useGLTF(import.meta.env.BASE_URL + '/src/assets/cube.glb')
+    const { nodes } = useGLTF(import.meta.env.BASE_URL + 'src/assets/cube.glb')
     const { viewport } = useThree();
 
   useFrame( () => {

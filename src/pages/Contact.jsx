@@ -5,10 +5,10 @@ export default function About(){
         <div className="myContact">
             <p>Email me at:<br/><u>romaine.cagubcub@gmail.com</u><br/>
             <Link to="https://github.com/Romaine31" target="_blank">
-            <img src="/src/assets/github.png" style={{height: "30px", width: "30px"}}/>
+            <img src={import.meta.env.BASE_URL + "/src/assets/github.png"} style={{height: "30px", width: "30px"}}/>
             </Link>
             <Link to="https://linkedin.com/in/imromaine" target="_blank">
-            <img src="/src/assets/linkedin.png" style={{height: "30px", width: "30px"}}/>
+            <img src={ import.meta.env.BASE_URL + "/src/assets/linkedin.png"} style={{height: "30px", width: "30px"}}/>
             </Link>
             </p>
         </div>

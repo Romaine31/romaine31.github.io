@@ -41,7 +41,7 @@ function App() {
       <div className="Frame"></div>
       </div>
       </div>
-      <p style={{bottom:"-9px", left:"30px", position:"absolute"}}>This Site is made with ReactJS, This site may change over time as it is actively being worked on, may not properly render on mobile</p>
+      <p style={{bottom:"-9px", left:"30px", position:"absolute"}}>may not properly render on mobile. This Site is made with ReactJS, This site may change over time as it is actively being worked on.</p>
     </div>
   )
 }

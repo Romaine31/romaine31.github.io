@@ -1,7 +1,8 @@
 import { useState } from 'react'
 import { Canvas } from "@react-three/fiber"
 import { Environment } from "@react-three/drei"
-import { Route, Routes } from 'react-router-dom'
+import { Route, Routes, useLocation } from 'react-router-dom'
+import { AnimatePresence, motion } from 'motion/react'
 
 import Cube from './Cube'
 import {DevName, InfoDirectory} from './Interface'
@@ -14,6 +15,8 @@ import './App.css'
 
 
 function App() {
+  const location = useLocation();
+
   return (
     <div className='CanvasContainer'>
       <Canvas>
@@ -27,11 +30,13 @@ function App() {
         <Contact />
       </div>
       <div className='NavigationContainer'>
-        <Routes>
-          <Route path="/" element={<About />} />
-          <Route path="/Experience" element={<Experience />} />
-          <Route path="/Works" element={<Works />} />
+        <AnimatePresence mode="sync">
+        <Routes location={location} key={location.pathname}>
+          <Route path="/" element={<PageWrapper><About /></PageWrapper>} />
+          <Route path="/Experience" element={<PageWrapper><Experience /></PageWrapper>} />
+          <Route path="/Works" element={<PageWrapper><Works /></PageWrapper>} />
         </Routes>
+        </AnimatePresence>
         <div className="OuterBackground">
       <div className="Frame"></div>
       </div>
@@ -40,5 +45,19 @@ function App() {
     </div>
   )
 }
+
+function PageWrapper({ children }) {
+  return(
+    <motion.div
+    initial = {{ opacity: 0}}
+    animate = {{ opacity: 1}}
+    exit = {{ opacity: 0}}
+    transition={{ duration: 0.3}}
+    >
+      {children}
+    </motion.div>
+  )
+}
+
 
 export default App

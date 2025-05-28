@@ -17,6 +17,10 @@ export default function Works(){
                     <Link to="https://github.com/Romaine31/SimpleSnake" target="_blank">Snake Game</Link>
                     <p>A simple snake game made with html and css</p>
                 </li>
+                <li>
+                    <Link to="https://github.com/Romaine31" target="_blank">Github profile</Link>
+                    <p>Just another redirect</p>
+                </li>
             </ul>
         </div>
     )

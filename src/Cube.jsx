@@ -11,8 +11,8 @@ export default function Cube() {
     const { viewport } = useThree();
 
   useFrame( () => {
-    cube.current.rotation.z += 0.006
-    cube.current.rotation.x += 0.01
+    cube.current.rotation.z += 0.002
+    cube.current.rotation.x += 0.004
   })
 
   const materialProps = {
@@ -22,19 +22,19 @@ export default function Cube() {
   return (
     <group scale={viewport.width / 16}>
         <mesh ref={cube} {...nodes.Cube}>
-            {/* <MeshTransmissionMaterial toneMapped = {true} 
-            samples={15}
-            thickness={30}
+            <MeshTransmissionMaterial toneMapped = {true} 
+            samples={6}
+            thickness={6}
             roughness={0}
             transmission={1}
             ior={0.9}
             clearcoat={0.2}
             anisotropy={0.4}
             chromaticAberration={0.4}
-            backsideThickness={40}
+            backsideThickness={6}
             color='white'
             backside
-            /> */}
+            />
 
 
         </mesh>

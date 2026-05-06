@@ -18,7 +18,6 @@ export default function Experience(){
             <h1>Software</h1>
             <ul>
                 <li>Visual Studio Code</li>
-                <li>Spyder</li>
                 <li>Unity Engine</li>
                 <li>Pycharm</li>
                 <li>Apache Netbeans</li>

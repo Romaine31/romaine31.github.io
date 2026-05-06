@@ -88,10 +88,10 @@ body,
 }
 
 .MyInfo{
-    top:12em;
+    top:0em;
     bottom: 4em;
     right: 2em;
-    width: 50%;
+    width: 70%;
     height: 80%;
     position: absolute;
     display: flex;

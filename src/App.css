@@ -13,11 +13,260 @@
     font-family: Radlush;
     src: url(./assets/RadlushMedium-BL7p5.ttf);
 }
+/*mobile*/
+h1, h2, u{
+    color: rgb(255, 255, 255);
+}
+
+p, li{
+    color: rgb(180, 180, 180);
+}
+
+html,
+body,
+.CanvasContainer,
+#root{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0px;
+    background-color: black;
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
+
+.LeftPanel{
+    top:0em;
+    left:0em;
+    height: 100%;
+    position: absolute;
+}
+
+.myName {
+    position: relative;
+    top: 1em;
+    left: 36px;
+}
+
+.myName h1 {
+    font-family: MonumentValley;
+    font-size: 30px;
+}
+
+.myName p{
+    top: -20px;
+    left: 0px;
+    position: relative;
+    font-family: PrintClearly;
+    font-size: 16px;
+}
+
+.myContact {
+    position: absolute;
+    font-family: Radlush;
+    bottom: 4%;
+    left: 2.4em;
+    font-size: 12px;
+}
+
+.myContact img {
+    margin-top: 10px;
+    margin-right: 12px;
+}
+
+.infoDirectory{
+    position: relative;
+    font-family: Radlush;
+    line-height: 2em;
+    font-size: 0.8em;
+    left: 6px;
+}
+
+.infoDirectory a {
+    color:white;
+    text-decoration: none;
+}
+
+.MyInfo{
+    top:12em;
+    bottom: 4em;
+    right: 2em;
+    width: 50%;
+    height: 80%;
+    position: absolute;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    text-align: right;
+    font-family: Radlush;
+    font-size: 12px;
+}
+
+.MyWorks{
+    display: flex;
+    position: absolute;
+    justify-content: right;
+    text-align: right;
+    right: 2em;
+    top: 12em;
+    font-family: Radlush;
+    font-size: 16px;
+    width: 80%;
+    height: 100%;
+    overflow: auto;
+}
+
+.MyWorks::-webkit-scrollbar {
+    width: 8px;
+  }
+.MyWorks::-webkit-scrollbar-track {
+    background: rgb(59, 59, 59);
+  }
+.MyWorks::-webkit-scrollbar-thumb {
+    background: rgb(112, 112, 112);
+    border-radius: 10px;
+  }
+
+.WorksList{
+    position: absolute;
+    list-style: none;
+    margin-right: 2em;
+    margin-top: 0em;
+}
+
+.WorksList a{
+    text-decoration: none;
+    color: white;
+    font-size: 40px;
+    font-family: MonumentValley;
+    line-height: 1.6em;
+}
+
+.WorksList p{
+    font-size: 14px;
+    position:relative;
+    top: -20px;
+    right: -10px;
+}
+
+.rightPanel{
+    position: absolute;
+    
+    right: 3em;
+    top: 12em;
+    height: 88%;
+    width: 80%;
+}
+
+.innerLeftPanel{
+    position: absolute;
+    top: 10px;
+    right: 8em;
+    height: 200px;
+    width: 200px;
+}
+.shortPanels h1{
+    font-family: PrintClearly;
+    font-size: 20px;
+    margin-left: 0.6em;
+    line-height: 6px;
+    font-size: 18px;
+}
+.shortPanels li{
+    list-style: none;
+    margin-left: -1.4em;
+    font-family: Radlush;
+    line-height: 1.2em;
+    font-size: 14px;
+}
+
+.innerRightPanel{
+    position: absolute;
+    top: 10px;
+    right: 0em;
+    height: 200px;
+    width: 200px;
+}
+
+.myHistory{
+    
+    width: 70%;
+    height: 60%;
+    position:absolute;
+    right: 1em;
+    bottom: 9em;
+    overflow: auto;
+    text-align: right;
+}
+
+.myHistory h1, h2{
+    margin-top: 0;
+    font-family: PrintClearly;
+}
+
+.myHistory p{
+    font-family: Radlush;
+}
+
+.myHistory::-webkit-scrollbar {
+    display: none;
+}
+.expPanel {
+    background-color: rgba(255, 255, 255, 0.11);
+    border: 0,0,0,0;
+    border-radius: 15px;
+}
+
+.expPanel h1{
+    font-size: 26px;
+    padding-top: 14px;
+    font-family: MonumentValley;
+}
+
+.expPanel h2{
+    font-size: 18px;
+    font-family: PrintClearly;
+}
+
+.expPanel p{
+    font-size: 14px;
+    padding-bottom: 10px;
+    font-family: Radlush;
+}
+
+.expPanel h1, h2, p{
+    padding-right: 10px;
+    margin: 6px;
+}
+
+.Frame{
+    content: '';
+    border: 1px solid rgb(255, 255, 255);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    pointer-events: none;
+}
+
+.OuterBackground {
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    border: 30px solid #0b0b0de1;
+    pointer-events: none;
+  }
 
 
+/*desktop*/
+@media (min-width: 1280px) {
 
 h1, h2, u{
-    color: white;
+    color: rgb(255, 255, 255);
 }
 
 p, li{
@@ -89,7 +338,8 @@ body,
 }
 
 .MyInfo{
-    bottom: 4em;
+    top:6em;
+    bottom: 6em;
     right: 4em;
     width: 50%;
     height: 80%;
@@ -108,7 +358,7 @@ body,
     justify-content: right;
     text-align: right;
     right: 2em;
-    top: 0em;
+    top: -2em;
     font-family: Radlush;
     font-size: 16px;
     width: 60%;
@@ -131,7 +381,7 @@ body,
     position: absolute;
     list-style: none;
     margin-right: 2em;
-    margin-top: 4em;
+    margin-top: 12em;
 }
 
 .WorksList a{
@@ -190,7 +440,7 @@ body,
     height: 70%;
     position:absolute;
     right: 1em;
-    top: 14em;
+    top: 12em;
     overflow: auto;
     text-align: right;
 }
@@ -253,3 +503,5 @@ body,
     border: 30px solid #0b0b0de1;
     pointer-events: none;
   }
+
+}

@@ -5,13 +5,14 @@ import linkedinImg from "/src/assets/linkedin.png?url"
 export default function About(){
     return(
         <div className="myContact">
-            <p>Email me at:<br/><u>romaine.cagubcub@gmail.com</u><br/>
+            <p>
             <Link to="https://github.com/Romaine31" target="_blank">
-            <img src={gitImg} style={{height: "30px", width: "30px"}}/>
+            <img src={gitImg} style={{height: "20px", width: "20px"}}/>
             </Link>
             <Link to="https://linkedin.com/in/imromaine" target="_blank">
-            <img src={linkedinImg} style={{height: "30px", width: "30px"}}/>
+            <img src={linkedinImg} style={{height: "20px", width: "20px"}}/>
             </Link>
+            <br/>Email me at:<br/><u>romaine.cagubcub@gmail.com</u><br/>
             </p>
         </div>
     )

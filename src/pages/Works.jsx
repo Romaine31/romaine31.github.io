@@ -6,6 +6,14 @@ export default function Works(){
         <div className="MyWorks">
             <ul className="WorksList">
                 <li>
+                    <Link to="https://test-webstore-is6oxdedp-romainecagubcub-9027s-projects.vercel.app/" target="_blank">Store Project</Link>
+                    <p>a sample webstore project</p>
+                </li>
+                <li>
+                    <Link to="https://github.com/Romaine31" target="_blank">Github profile</Link>
+                    <p>Just another redirect</p>
+                </li>
+                <li>
                     <Link to="https://github.com/Romaine31/RosawellAcademy" target="_blank">Rosawell Academy</Link>
                     <p>My Thesis Project, A game made in unity (language: C#)</p>
                 </li>
@@ -16,10 +24,6 @@ export default function Works(){
                 <li>
                     <Link to="https://github.com/Romaine31/SimpleSnake" target="_blank">Snake Game</Link>
                     <p>A simple snake game made with html and css</p>
-                </li>
-                <li>
-                    <Link to="https://github.com/Romaine31" target="_blank">Github profile</Link>
-                    <p>Just another redirect</p>
                 </li>
             </ul>
         </div>
